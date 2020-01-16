@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://zucctopia.github.io">Zucctopia Website</a></h1>
+<h1 align="center"><a href="https://zucctopia.github.io" target="_blank">Zucctopia Website</a></h1>
 <p>
   <a href="https://github.com/zucctopia/zucctopiahub.io.git/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
