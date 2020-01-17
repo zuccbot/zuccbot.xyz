@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="description" content="Zucctopia is a Discord meme server. The rules aren't strict and the staff are friendly - we're all here just to have a good time :)"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="msapplication-TileColor" content="#680b0d"/>
+  <meta name="keywords" content="discord, zuccbot, zucctopia, bot, zucc, cheesits456, server, community, meme"/>
+  <meta property="og:type" content="profile"/>
+  <meta property="og:image" content="https://zucctopia.github.io/images/avatar.png"/>
+  <meta property="og:title" content="Zucctopia"/>
+  <meta property="og:url" content="https://zucctopia.github.io/"/>
+  <meta property="og:description" content="Zucctopia is a Discord meme server. The rules aren't strict and the staff are friendly - we're all here just to have a good time :)"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="apple-mobile-web-app-title" content="Zucctopia"/>
+  <link rel="apple-touch-icon-precomposed" href="images/avatar.png"/>
+  <meta name="msapplication-TileImage" content="https://zucctopia.github.io/images/avatar.png"/>
+  <meta name="theme-color" content="#680b0d"/>
+  <title>Zucctopia</title>
+  <!-- favicon -->
+  <link href="images/avatar.png" rel="icon" />
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <!-- Icons -->
+  <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+  <!-- Slider -->
+  <link href="css/owl.carousel.min.css" rel="stylesheet" />
+  <link href="css/owl.theme.default.min.css" rel="stylesheet" />
+  <!-- Main css -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="background: center / cover no-repeat url('images/background.png') #171717">
+  <!-- Loader -->
+  <div id="preloader">
+    <div id="status">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Loader -->
+  <!-- Navbar STart -->
+  <header class="defaultscroll sticky" id="topnav">
+    <div class="container">
+      <!-- Logo container-->
+      <div><a class="logo" href="#">Zucc<span class="text-primary">topia</span></a></div>
+      <div class="buy-button">
+        <a class="btn btn-primary" href="https://discord.gg/zucc" target="_blank">Join Server</a>
+      </div>
+      <!-- end login button -->
+      <!-- End Logo container-->
+    </div>
+    <!-- end container -->
+  </header>
+  <!-- end header -->
+  <!-- Navbar End -->
+  <!-- Hero Start -->
+  <section class="bg-home" id="home">
+    <div class="home-center">
+      <div class="home-desc-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 text-center mt-0 mt-md-5 pt-0 pt-md-5">
+            	<img id="avatar" style="border-radius: 100%"><br><br>
+              <div class="title-heading">
+                <h1 class="heading mb-3">Welcome to Zucctopia!</h1>
+                <p class="para-desc mx-auto text-muted">Zucctopia is a Discord meme server. The rules aren't strict and the staff are friendly - we're all here just to have a good time :)</p>
+              </div>
+            </div>
+            <!-- end col -->
+          </div>
+          <br>
+          <div class="row">
+          	<div id="member-div" class="col-lg-6" style="padding: 0px 5px; margin-bottom: 1em;">
+          		<a id="member-count" class="btn btn-primary"><b>Total Members:</b></a>
+          	</div>
+          	<div id="online-div" class="col-lg-6" style="padding: 0px 5px; margin-bottom: 1em;">
+          		<a id="online-count" class="btn btn-primary"><b>Total Online:</b></a>
+          	</div>
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+        <div class="text-muted" style="position: absolute; bottom: 0; left: 0"><b>Copywrite &copy; 2020 <a class="text-primary" href="https://github.com/cheesits456" target="_blank"><u>cheesits456</u></a></b></div>
+      </div>
+      <!-- end home desc center -->
+    </div>
+    <!-- end home center -->
+  <!-- javascript -->
+  <script type="text/javascript">
+    document.getElementById("avatar").style.height = `${window.innerHeight > window.innerWidth && window.innerWidth < 600 ? 150 : 300}px`;
+  	var center = window.innerWidth < 992 ? " text-center" : "";
+  	document.getElementById("member-div").className += center || " text-right";
+  	document.getElementById("online-div").className += center || " text-left";
+
+  	var icon = new XMLHttpRequest();
+  	icon.addEventListener("load", function() {
+    	var guild = JSON.parse(this.response).guild;
+    	document.getElementById("avatar").src = `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.${guild.icon.startsWith("a_") ? "gif" : "png"}`;
+  	});
+	  icon.open("GET", "https://discordapp.com/api/v6/invites/zucc");
+  	icon.send();
+
+  	var widget = new XMLHttpRequest();
+  	widget.addEventListener("load", function() {
+  		var counters = JSON.parse(this.response).channels;
+  		counters.forEach(c => {
+  			var a = c.name.split(": ");
+  			if (a.length === 2) {
+  				if (a[0] === "Members") document.getElementById("member-count").innerHTML += `<br>${a[1]}`;
+  				else if (a[0] === "Online") document.getElementById("online-count").innerHTML += `<br>${a[1]}`;
+  			}
+  		})
+  	})
+  	widget.open("GET", "https://discordapp.com/api/guilds/508776447943376917/widget.json");
+  	widget.send();
+  </script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/scrollspy.min.js"></script>
+  <!-- Main Js -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
