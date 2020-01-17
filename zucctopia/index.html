@@ -102,7 +102,7 @@
   	var icon = new XMLHttpRequest();
   	icon.addEventListener("load", function() {
     	var guild = JSON.parse(this.response).guild;
-    	document.getElementById("avatar").src = `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.${guild.icon.startsWith("a_") ? "gif" : "png"}`;
+    	document.getElementById("avatar").src = `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.${guild.icon.startsWith("a_") ? "gif" : "png"}?size=1024`;
   	});
 	  icon.open("GET", "https://discordapp.com/api/v6/invites/zucc");
   	icon.send();
