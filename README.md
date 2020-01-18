@@ -23,4 +23,4 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 ## License
 
 Copyright © 2020 [cheesits456](https://cheesits456.dev).<br />
-This website is licensed under [GPL-3.0](https://github.com/zuccbot/zuccbot.github.io/master/LICENSE)
+This website is licensed under [GPL-3.0](https://github.com/zuccbot/zuccbot.github.io/blob/master/LICENSE)
