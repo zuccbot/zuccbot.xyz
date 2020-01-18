@@ -1,9 +1,9 @@
 <h1 align="center"><a href="https://zucctopia.github.io" target="_blank">Zucctopia Website</a></h1>
 <p>
-  <a href="https://github.com/zucctopia/zucctopiahub.io.git/graphs/commit-activity" target="_blank">
+  <a href="https://github.com/zuccbot/zuccbot.github.io/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/zucctopia/zucctopiahub.io.git/blob/master/LICENSE" target="_blank">
+  <a href="https://github.com/zuccbot/zuccbot.github.io/blob/master/LICENSE" target="_blank">
     <img alt="License: GPL--3.0" src="https://img.shields.io/github/license/zucctopia/zucctopia.github.io" />
   </a>
 </p>
@@ -32,5 +32,5 @@ Give a ⭐️ if this project helped you!
 
 ## License
 
-Copyright © 2020 [cheesits456](https://github.com/cheesits456).<br />
-This project is licensed under [GPL-3.0](https://github.com/zucctopia/zucctopiahub.io.git/blob/master/LICENSE)
+Copyright © 2020 [cheesits456](https://cheesits456.dev).<br />
+This project is licensed under [GPL-3.0](https://github.com/zuccbot/zuccbot.github.io/master/LICENSE)
