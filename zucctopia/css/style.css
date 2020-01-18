@@ -234,8 +234,8 @@ a.text-footer:hover {
   background-color: #911114 !important;
   border: 1px solid #911114 !important;
   color: #ffffff !important;
-  -webkit-box-shadow: 0 3px 5px 0 rgba(47, 85, 212, 0.3);
-          box-shadow: 0 3px 5px 0 rgba(47, 85, 212, 0.3);
+  -webkit-box-shadow: 0 3px 5px 0 rgba(145, 17, 20, 0.3);
+          box-shadow: 0 3px 5px 0 rgba(145, 17, 20, 0.3);
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.focus {
