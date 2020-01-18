@@ -32,5 +32,5 @@ Give a ⭐️ if this project helped you!
 
 ## License
 
-Copyright © 2020 [cheesits456](https://github.com/cheesits456).<br />
-This project is licensed under [GPL-3.0](https://github.com/zucctopia/zucctopiahub.io.git/blob/master/LICENSE)
+Copyright © 2020 [cheesits456](https://cheesits456.dev).<br />
+This project is licensed under [GPL-3.0](https://github.com/zuccbot/zuccbot.github.io/master/LICENSE)
