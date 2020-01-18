@@ -4,7 +4,7 @@
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
   <a href="https://github.com/zuccbot/zuccbot.github.io/blob/master/LICENSE" target="_blank">
-    <img alt="License: GPL--3.0" src="https://img.shields.io/github/license/zuccbot/zucctopia.github.io" />
+    <img alt="License: GPL--3.0" src="https://img.shields.io/github/license/zuccbot/zuccbot.github.io" />
   </a>
 </p>
 
