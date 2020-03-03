@@ -14,13 +14,5 @@ Landing page for Zucctopia: a Discord server with nearly 60,000 members
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check the [issues page](https://github.com/zuccbot/zuccbot.github.io/issues). 
 
-## Show your support
-
-<a href="https://www.patreon.com/cheesits456">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
 ## License
-
-Copyright © 2020 [cheesits456](https://cheesits456.dev).<br />
-This website is licensed under [GPL-3.0](https://github.com/zuccbot/zuccbot.github.io/blob/master/LICENSE)
+This website is licensed under [AGPL-3.0](https://github.com/zuccbot/zuccbot.github.io/blob/master/LICENSE)
